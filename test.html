@@ -1,0 +1,28 @@
+<section class="slider">
+    <div class="slider-container">
+        <div><img src="imagen1.jpg" alt="Imagen 1"></div>
+        <div><img src="imagen2.jpg" alt="Imagen 2"></div>
+        <div><img src="imagen3.jpg" alt="Imagen 3"></div>
+        <!-- Agrega más divs con imágenes aquí -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider-container').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                    }
+                }
+            ]
+        });
+    });
+</script>
+</section>

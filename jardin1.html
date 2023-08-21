@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jardin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <title>Jardín de Niños</title>
+</head>
+
+<body>
+    <header>
+        <h1>Jardín de Niños Felices</h1>
+        <nav>
+            <ul>
+                <li><a href="jardin1.html">Inicio</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="registrarse.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio" class="slider">
+        <div class="slider-container">
+            <div class="slide"><img src="imagen1.jpg" alt="Imagen 1"></div>
+            <div class="slide"><img src="imagen2.jpg" alt="Imagen 2"></div>
+            <div class="slide"><img src="imagen3.jpg" alt="Imagen 3"></div>
+        </div>
+    </section>
+    <section id="nosotros" class="about">
+
+        <h2>Sobre Nosotros</h2>
+        <img src="imagen4.jpg" alt="imagen4">
+        <hr>
+        <p>Nos llena de alegría darles la bienvenida a nuestro colorido y emocionante mundo. En nuestro jardín, cada día
+            es una oportunidad para explorar, aprender y crecer juntos. Nuestra dedicada comunidad de educadores y
+            personal está aquí para nutrir las mentes curiosas y los corazones llenos de energía de sus pequeños.
+        </p>
+        <p>
+            Cada niño es una chispa única de imaginación, y nuestro objetivo es encender esa chispa mientras construimos
+            cimientos sólidos para su futuro. A través de juegos, risas y descubrimientos, fomentamos el amor por el
+            aprendizaje y el compañerismo. Cada aula es un espacio lleno de colores, letras, números y, sobre todo, de
+            amor y cuidado.
+        </p>
+        <p>
+            Exploraremos juntos la magia de los cuentos, la emoción de los números y las maravillas de la naturaleza que
+            nos rodea. Cada día será una nueva aventura, llena de sonrisas, abrazos y pequeños logros que celebrar.</p>
+        </p>
+    </section>
+
+    <section id="programas" class="programs">
+        <h2>Nuestros Programas</h2>
+        <img src="imagen5.jpeg" alt="imagen5" id="imagen5" class="imagen5">
+        <p>Descubre nuestros emocionantes programas para los niños...</p>
+        <hr>
+
+        <p>Exploradores de la Naturaleza:
+            Un programa que lleva a los niños al aire libre para explorar la naturaleza. Pueden recolectar hojas,
+            observar insectos, identificar aves y aprender sobre la vida en el jardín. También podrían plantar semillas
+            y cuidar plantas pequeñas.
+        </p>
+        <p>
+            Cuentacuentos Mágicos:
+            Una hora especial donde un cuentacuentos visita el jardín de infantes para narrar historias emocionantes y
+            mágicas. Después de cada historia, los niños pueden crear sus propias ilustraciones o actuar partes de la
+            historia.
+        </p>
+        <p>
+            Pequeños Científicos:
+            Una serie de experimentos científicos diseñados para niños pequeños. Pueden hacer burbujas gigantes, crear
+            volcanes de bicarbonato de sodio y vinagre, explorar colores con mezclas de agua y colorantes, entre otros.
+        </p>
+        </p>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas? ¡Contáctanos!</p>
+        <form>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo Electrónico">
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Derechos Reservados &copy; 2023 Jardín de Niños Felices</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider-container').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev">Anterior</button>',
+                nextArrow: '<button type="button" class="slick-next">Siguiente</button>',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>
